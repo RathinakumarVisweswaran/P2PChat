@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AnswerME</string>
+    <string name="title_activity_main">AnswerMe</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="service_name">chatService</string>
+    <string name="title_activity_chat_room">CreateRoomActivity</string>
+    <string name="chat_service">chatService</string>
+    <string name="search_chatrooms">search Chat Rooms</string>
+    <string name="btn_send">btn_send</string>
+    <string name="txt_hint">message_line</string>
+    <string name="title_activity_chat">ChatActivity</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="p2p.ask" >
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="p2p.forum.LoginActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="p2p.forum.ApplicationService"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/chat_service" >
+        </service>
+
+        <activity
+            android:name="p2p.forum.ChatRoomEditActivity"
+            android:label="@string/title_activity_chat_room" >
+        </activity>
+        <activity
+            android:name="p2p.forum.ForumActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+    </application>
+
+</manifest>

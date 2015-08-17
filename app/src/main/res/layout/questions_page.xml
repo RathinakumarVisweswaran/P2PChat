@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="p2p.forum.ChatRoomEditActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_room_name_editText"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ask_question_btn"
+        android:layout_toStartOf="@+id/ask_question_btn"
+        android:hint="Ask your Q"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ASK"
+        android:id="@+id/ask_question_btn"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/chat_rooms_container"
+        android:layout_alignEnd="@+id/chat_rooms_container" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/chat_rooms_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:layout_below="@+id/ask_question_btn" />
+</RelativeLayout>
